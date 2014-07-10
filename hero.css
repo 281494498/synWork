@@ -1,0 +1,72 @@
+html,body{
+    height:100%;
+}
+
+header{
+    width:100%;
+    z-index:1;
+    background-color: #fff;
+}
+
+.main-hero{
+    position:absolute;
+    top:0;
+    bottom:0;
+    z-index: 0;
+    width:100%;
+    display: flex;
+    background-color: #145072;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.main-hero>*{
+    border: 10px;
+}
+.hero-img{
+    background-color: orange;
+    flex:1 50%;
+}
+
+.hero-chart{
+    background-color: lightblue;
+    flex:1 50%;
+}
+
+.hero-history{
+    flex:2 20%;
+    background-color: yellowgreen;
+}
+
+
+.main-center{
+    padding:10px;
+    flex:1;
+    background-color: #ff516e;
+    /*vertical-align: middle;*/
+    text-align: center;
+}
+
+
+.aside  {
+    padding:10px;
+    flex:1;
+    /*vertical-align: middle;*/
+}
+footer{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    background-color: #fff;
+}
+
+@media  (max-width: 600px) {
+    /* We tell both sidebars to share a row */
+    .main > *{
+        padding:10px;
+        flex:1 100%;
+    }
+    /*.aside{*/
+        /*flex:0;*/
+    /*}*/
+}
